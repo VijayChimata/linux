@@ -1,0 +1,100 @@
+what is Linux?
+"Linux is an Open Source computer Operating System which is capable of handling activities 
+from multiple users at the same time."
+
+create directory: "mkdir" is the command to create a directory in Linux
+mkdir test
+
+change directory: "cd" is the command to change the directory in Linux
+cd test
+
+move to parent directory: "cd .."
+cd ..
+
+to check the calendar 
+cal
+
+To know who is logged into computer
+who, users, w
+
+To check the disk storage
+df -h
+
+To log out
+logout
+
+For doing shutdown
+halt
+init 0
+init 6
+poweroff
+reboot
+shutdown
+
+File Management Commands
+
+List Directory: "ls -l" is the command list down all the files and sub-directories available
+in the current directory in Linux
+
+ls -l ==> this option would help to get more info about the listed files
+
+Meta Characters in linux (*,?)
+syntax: ls fi*.txt
+The above command list all the text files starts with fi
+
+* ==> is used to match 0 or more Characters
+? ==> is used to match with a single Character
+
+Hidden Files in Linux: 
+    The files which starts with dot (.) are invisible to users. we can see those fies using "ls -a"
+Linux program use most of these files to store system configuration information.
+
+single dot (.) : This represents the current directory
+double dot (..) : This represents the parent directory
+
+Creating Files in linux using vi editor:
+vi filename 
+The above command opens the file with the above name in vi editor
+
+To display content of the file
+cat filename
+
+To display line numbers 
+cat -b filename
+
+counting lines,words, and characters in File
+wc filename
+wc file1 file2 ....
+
+copying files in linux
+cp source_file dest_file
+
+Renaming files in linux
+mv source_file dest_file
+this mv command will move the existing file completely into the new file
+
+Deleting Files in linux
+rm file_name
+
+rm file1 file2 ...
+
+Any files contain imp information so it's better to use -i along with rm command
+rm -i file1
+
+Creating links on files
+    Linux provides link mechanism to access file from another location. 
+    These links are alternate names for the existing files.
+    These links could be symbolic links or hard links
+
+Symbolic link
+ln -s filename link_name
+
+Hard link
+ln filename link_name
+
+we can check these created links using ls -l
+
+Note: by using this symbolic / hard links we can access original file. we can edit these files using the links.
+ If we delete a link file then your original file will remain undeleted or unchanged.
+
+ 
